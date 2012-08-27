@@ -1,0 +1,25 @@
+############
+## Windows
+############
+
+# Windows image file caches
+Thumbs.db
+
+# Folder config file
+Desktop.ini
+
+
+#############
+## Python
+#############
+
+# Mac crap
+.DS_Store
+
+#############
+## IDEA / RubyMine
+#############
+
+# Project file
+.idea
+.iws
