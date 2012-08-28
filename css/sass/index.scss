@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import "include/function.scss";
 
 html {
 	height: 100%;
@@ -22,7 +23,7 @@ body#index {
 		background-color: white;
 	}
 
-	#page {
+	#page, #bgNoText, #bgText {
 		height: 300px;
 		width: 900px;
 		position: absolute;
@@ -30,7 +31,18 @@ body#index {
 		margin-top: -162px;
 		left: 50%;
 		margin-left: -450px;
+	}
+
+	#page {
+		z-index: 10;
+	}
+
+	#bgText {
 		background: #0080FF no-repeat left top url("../img/bg-text.png");
+		display: none;
+	}
+	#bgNoText {
+		background: #0080FF no-repeat left top url("../img/bg-notext.png");
 	}
 
 	h1 {
@@ -44,6 +56,53 @@ body#index {
 		background: no-repeat left top url("../img/logo-chs.png");
 		right: 2px;
 		top: 32px;
+		z-index: 15;
+	}
+
+	#nav {
+		font: normal 14px Euphemia, "Segoe UI", SimSun, "宋体", sans-serif;
+		position: absolute;
+		right: 0;
+		bottom: 138px;
+		a {
+			text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+			text-decoration: none;
+			display: block;
+			height: 42px;
+			line-height: 22px;
+			width: 81px;
+			padding: 0 6px 6px;
+			border-right: 1px dotted white;
+			text-align: right;
+			@include transition("all 0.4s ease-out");
+
+			span {
+				display: block;
+			}
+		}
+		ul {
+			margin: 0;
+			padding: 0;
+			li {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				float: left;
+				color: #0080FF;
+
+				a {
+					color: white;
+				}
+			}
+			li:hover {
+				background-color: white;
+				@include transition("all 0.4s ease-out");
+
+				a {
+					color: inherit;
+				}
+			}
+		}
 	}
 
 	#footer {
