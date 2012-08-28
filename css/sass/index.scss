@@ -39,10 +39,10 @@ body#index {
 
 	#bgText {
 		background: #0080FF no-repeat left top url("../img/bg-text.png");
-		display: none;
 	}
 	#bgNoText {
 		background: #0080FF no-repeat left top url("../img/bg-notext.png");
+		display: none;
 	}
 
 	h1 {
@@ -60,6 +60,7 @@ body#index {
 	}
 
 	#nav {
+		display: none;
 		font: normal 14px Euphemia, "Segoe UI", SimSun, "宋体", sans-serif;
 		position: absolute;
 		right: 0;
