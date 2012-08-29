@@ -1,0 +1,17 @@
+sass:
+  input: css/sass
+  output: css
+  style: compressed
+less:
+  input: css/less
+  output: css
+  compress: No
+  yui: Yes
+coffee:
+  input: js/coffee
+  output: js
+  bare: No
+docco:
+  input: js/coffee
+  output: docs
+  pattern: "*.(js|coffee)"
