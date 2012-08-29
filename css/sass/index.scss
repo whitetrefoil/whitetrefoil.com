@@ -216,4 +216,13 @@ body#index {
 			text-align: right;
 		}
 	}
+
+	#ieNotice {
+		font: normal 12px Euphemia, "Segoe UI", SimSun, "宋体", sans-serif;
+		color: $color1;
+		text-align: right;
+		position: absolute;
+		right: 0;
+		bottom: -80px;
+	}
 }
